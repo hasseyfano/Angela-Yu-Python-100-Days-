@@ -1,16 +1,16 @@
-# print("Welcome to the tip calculator! ")
-# bill= float (input("What was the total bill: "))
-# tip =float(input("How much tip would you like to give? 10,12 or 15 ? "))
-# if tip in [10,12,15]:
-#     billAfterTip=  bill + (bill * tip / 100)
-# else:
-#     print("input the options given")    
-#     exit()
-# split =float(input("How many people to split the bill? "))
+print("Welcome to the tip calculator! ")
+bill= float (input("What was the total bill: "))
+tip =float(input("How much tip would you like to give? 10,12 or 15 ? "))
+if tip in [10,12,15]:
+    billAfterTip=  bill + (bill * tip / 100)
+else:
+    print("input the options given")    
+    exit()
+split =float(input("How many people to split the bill? "))
 
-# netBill=billAfterTip/split
-# print(f"Each person should pay {netBill}")
-
+netBill=billAfterTip/split
+print(f"Each person should pay {netBill}")
+# another solution using functions
 def tip_calculator():
     print("Welcome to the tip calculator!")
     
