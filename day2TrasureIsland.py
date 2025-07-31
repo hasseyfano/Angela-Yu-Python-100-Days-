@@ -23,7 +23,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 
 while True:
-    name = input("What is your name:\t").capitalize()
+    name = input("What is your name:  ").capitalize()
     print('''  
 "Welcome to Treasure Island!
 
@@ -32,15 +32,15 @@ Your mission is to find the treasure.
     ''')
 
     # First choice: Left or Right?
-    direction = input('Which direction do you want to go? Type "Left" or "Right".\n').lower()
+    direction = input('Which direction do you want to go? Type "Left" or "Right": ').lower()
 
     if direction == "left":
         # Continue the game
-        request = input('You\'ve come to a lake. There is an island inside the lake. Type "Wait" to wait for a boat. Type "Swim" to swim across.\n').lower()
+        request = input('You\'ve come to a lake. There is an island inside the lake. Type "Wait" to wait for a boat. Type "Swim" to swim across:  ').lower()
         
         if request == "wait":
             # Continue the game
-            color = input("You've arrived at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which one do you choose?\n").lower()
+            color = input("You've arrived at the island unharmed.  There is a house with 3 doors. One Red, one Yellow, and one Blue. Which one do you choose?:   ").lower()
             
             if color == "red":
                 print(f"{name}, Game over!")
@@ -56,7 +56,16 @@ Your mission is to find the treasure.
         print(f"{name}, Game over!")
 
     # Ask if the player wants to play again
-    play_again = input("Do you want to play again? Type 'yes' to continue or 'no' to quit.\n").lower()
+    play_again = input("Do you want to play again? Type 'yes' to continue or 'no' to quit:  ").lower()
     if play_again != "yes":
         print("Thanks for playing! Goodbye!")
         break
+#the  above can also be written as the following:
+"""
+if input("Play again? Type 'yes' to continue: ").lower() != "yes":
+        print("\nThanks for playing! Goodbye!")
+        break
+"""
+
+
+# End of the game
